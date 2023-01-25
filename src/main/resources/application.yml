@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: aflk.discovery
+
+eureka:
+  client:
+    registerWithEureka: false # 클라이언트가 유레카 서비스에 자신을 등록하지 않음
+    fetchRegistry: false # 레지스트리 정보를 클라이언트 로컬에 캐싱하지 않음. 유레카 클라이언트가 유레카 서비스에 등록시 설정 가능
+  #server:
+  #  waitTimeInMsWhenSyncEmpty: 5 # 5ms만에 등록한 서비스를 알리도록 설정. 테스트 용도. 운영 환경에서는 주석처리.
+  #  #유레카는 서비스가 등록되면 10초 간격으로 연속 3회 동안 상태정보를 받고 최종 등록하므로 서비스를 보여주는데 30초 걸림
+  #serviceUrl:
+  #  defaultZone: http://localhost:8761
