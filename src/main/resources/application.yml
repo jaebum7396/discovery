@@ -10,7 +10,7 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: http://52.79.162.165:9999
+      defaultZone: ${DISCOVERY_URL}
   #server:
   #  waitTimeInMsWhenSyncEmpty: 5 # 5ms만에 등록한 서비스를 알리도록 설정. 테스트 용도. 운영 환경에서는 주석처리.
   #  #유레카는 서비스가 등록되면 10초 간격으로 연속 3회 동안 상태정보를 받고 최종 등록하므로 서비스를 보여주는데 30초 걸림
